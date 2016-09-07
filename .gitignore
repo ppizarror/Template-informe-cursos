@@ -1,0 +1,32 @@
+# OSX.
+.DS_Store
+
+# Pycharm.
+.idea/
+pycharm/
+
+# Pydev.
+.project
+.pydevproject
+
+# Eclipse.
+.settings/
+
+# Archivos compilados de python.
+*.pyc
+
+# Windows thumbs.
+Thumbs.db
+
+# Archivos residuales de VIM.
+*.swp
+
+# Archivos de latex
+*.out
+*.aux
+*.log
+*.log
+*.toc
+*.lof
+*.lot
+*.synctex.gz
