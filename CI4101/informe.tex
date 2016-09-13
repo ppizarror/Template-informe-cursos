@@ -16,19 +16,18 @@
 \usepackage[spanish]{babel}                % Define el idioma del documento en español
 
 % INFORMACIÓN DEL DOCUMENTO
-\newcommand{\nombrealumno}{Nombre Alumno}
 \newcommand{\nombredelinforme}{Título del informe}
 \newcommand{\temaatratar}{Tema a tratar}
 \newcommand{\fecharealizacion}{\today}
 \newcommand{\fechaentrega}{\today}
 
-\newcommand{\nombredelcurso}{Métodos Numéricos para la Ciencia e Ingeniería}
-\newcommand{\codigodelcurso}{FI-3104}
+\newcommand{\nombredelcurso}{Hidráulica}
+\newcommand{\codigodelcurso}{CI-4101}
 
 \newcommand{\nombreuniversidad}{Universidad de Chile}
 \newcommand{\nombrefacultad}{Facultad de Ciencias Físicas y Matemáticas}
-\newcommand{\departamentouniversidad}{Departamento de Física}
-\newcommand{\imagendeldepartamento}{images/dfi}
+\newcommand{\departamentouniversidad}{Departamento de Ingeniería Civil}
+\newcommand{\imagendeldepartamento}{images/dic}
 \newcommand{\imagendeldepartamentoescl}{0.2}
 \newcommand{\localizacionuniversidad}{Santiago, Chile}
 
@@ -39,18 +38,28 @@
 		\begin{tabular}{ll}
 		Integrantes: 
 			& \begin{tabular}[t]{@{}l@{}}
-				\nombrealumno
+				Integrante 1 \\
+				Integrante 2 \\
+				Integrante 3
 			\end{tabular} \\
 		Profesor: 
 			& \begin{tabular}[t]{@{}l@{}}
-				Valentino González C.
+				Alberto De la Fuente S.
 			\end{tabular} \\
 		Auxiliares: 
 			& \begin{tabular}[t]{@{}l@{}}
-				Ignacio Armijo \\
-				María Constanza Flores V. \\
-				Mario A. Osvaldo Aguilar F.
+				Dimitri Dionizis R. \\
+				Sebastián Alday
 			\end{tabular}\\
+		Ayudantes: 
+			& \begin{tabular}[t]{@{}l@{}}
+				Abel Alexis Muñoz R. \\
+				Catalina Aranguiz K. \\
+				Esteban Román C. \\
+				Ignacio Toro Mena \\
+				Pablo Jara M.
+			\end{tabular}\\
+		\multicolumn{2}{l}{Ayudante del laboratorio: Nombre Ayudante} \\
 		& \\
 		\multicolumn{2}{l}{Fecha de realización: \fecharealizacion} \\
 		\multicolumn{2}{l}{Fecha de entrega: \fechaentrega} \\
@@ -406,56 +415,30 @@
 
 	\subsection{Introducción}
 	
-		Se busca integrar la siguiente ecuación diferencial:
+		\lipsum[2]
 		
-		\insertequation[\label{ecuacion1}]{\bigg( \fracnderivat{}{r}{2} - \frac{2}{\pow{r}{2}}\bigg)\Phi(r) = -8 \pi r \pow{e}{-\pow{r}{2}}}
+	\subsection{Desarrollo}
+	
+		\lipsum[1]
 		
-		Para $1 < r < \infty$, cumpliendo las condiciones de borde $\Phi(1)=1$ y $\Phi(\infty)=0$.
+	\subsection{Conclusión}
+	
+		\lipsum[3]
+		
+		
+\section{Pregunta 2}
 
-		\newp Acá introduzco el problema a resolver, parámetros como las condiciones de borde, etc. Recuerden incluir toda la información necesaria para que alguien pueda reproducir su programa/resultados leyendo su informe - pero sean concisos, lo mejor es una explicación corta y clara.
-		
+	\subsection{Introducción}
 	
-	\subsection{Procedimiento}
+		\lipsum[5]
+		
+	\subsection{Desarrollo}
 	
-		¿Cómo resolver el problema que planteamos recién? con algún algoritmo o método de resolución numérica. El método de ...., en este caso utilizamos...., etc, etc, por medio de la expresión
+		\lipsum[7]
 		
-		\insertequation[\label{ecuacion2}]{ \Phi(r) = \bar{\Phi}(r) + \frac{\lpow{\Phi}{b} - \bar{\Phi}(b)}{\lpow{\Phi}{h}(b)}\lpow{\Phi}{h}(r)}
-		
-		Explicaciones cortas y claras. Aquí expliquen qué hicieron y con qué parámetros (por ejemplo, su valor de h o $\epsilon$).
-		
+	\subsection{Conclusión}
 	
-	\subsection{Resultados}
-	
-		Aquí van los resultados de su tarea. Apóyense en tablas y gráficos, como muestra la Figura 1.
-		
-		\insertimage[\label{imagen1}]{ejemplo.png}{scale=0.6}{Un ejemplo de gráfico.}
-		
-	
-	\subsection{Conclusiones}
-	
-		Análisis y conclusiones a partir de los resultados obtenidos. Cuiden que sus informes sean ordenados y coherentes, pueden agregar subsecciones donde lo consideren necesario.
-		
-		\begin{longtable}{ccc}
-			\caption{Ejemplo de tabla.}\label{foo}\\
-			\hline
-			Columna 1 & Columna 2 & Columna 3\\\hline
-			\endfirsthead
-			\hline
-			Columna 1 & Columna 2 & Columna 3\\
-			\hline
-			\endhead
-			\hline
-			\endfoot
-			\hline
-			\endlastfoot
-			$\omega$ & $\nu$ & $\delta$\\     
-			$\partial$ & $\nabla$ & $\mho$\\
-			$\beta$ & $\gamma$ & $\epsilon$\\   
-			$\varepsilon$ & $\upsilon$ & $\varphi$\\
-			$\Phi$ & $\Theta$ & $\varSigma$\\
-			$\omega$ & $\nu$ & $\delta$\\     
-			$\partial$ & $\nabla$ & $\mho$\\ 
-		\end{longtable}
+		\lipsum[8]
 
 % FIN DEL DOCUMENTO
 \end{document}
