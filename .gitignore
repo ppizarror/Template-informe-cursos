@@ -30,6 +30,8 @@ Thumbs.db
 *.lof
 *.lot
 *.synctex.gz
+*.bbl
+*.blg
 
 # Releases
 .releases/*

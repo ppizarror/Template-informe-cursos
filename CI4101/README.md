@@ -6,7 +6,7 @@ Creado a partir del <a href="https://github.com/ppizarror/Template-Informe">Temp
 
 Para utilizar las funciones extras del template puedes revisar esta <a href="https://github.com/ppizarror/Template-Informe/wiki">Wiki</a>, sin embargo se han agregado las siguientes características:
 
-+ **\nombrealumno**: Permite modificar el nombre del alumno sin editar la tabla de datos de la portada, esta se incluye en la sección *% INFORMACIÓN DEL DOCUMENTO*.
++ **\nombreayudantelab**: Permite modificar el nombre del ayudante del laboratorio sin editar la tabla de datos de la portada, esta se incluye en la sección *% INFORMACIÓN DEL DOCUMENTO*.
 
 ## Autor
 Pablo Pizarro, 2016.
