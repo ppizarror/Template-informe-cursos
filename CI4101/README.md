@@ -1,6 +1,6 @@
 ﻿# Template para el curso CI-4104
 
-Creado a partir del <a href="https://github.com/ppizarror/Template-Informe">Template-Informe</a> en su versión 2.0.2 para el curso de Hidráulica, de la Universidad de Chile.
+Creado a partir del <a href="http://ppizarror.github.io/Template-Informe/">Template-Informe</a> en su versión 2.0.4 para el curso de Hidráulica, de la Universidad de Chile.
 
 ## Cómo usar
 
