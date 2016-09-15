@@ -1,0 +1,6 @@
+{
+  "name": "Template-informe-cursos",
+  "tagline": "Template de informes para cursos específicos",
+  "body": "# Template para el curso CI-4104\r\n\r\nCreado a partir del <a href=\"http://ppizarror.github.io/Template-Informe/\">Template-Informe</a> en su versión 2.0.4 para el curso de Hidráulica, de la Universidad de Chile.\r\n\r\n## Cómo usar\r\n\r\nPara utilizar las funciones extras del template puedes revisar esta <a href=\"https://github.com/ppizarror/Template-Informe/wiki\">Wiki</a>, sin embargo se han agregado las siguientes características:\r\n\r\n+ **\\nombreayudantelab**: Permite modificar el nombre del ayudante del laboratorio sin editar la tabla de datos de la portada, esta se incluye en la sección *% INFORMACIÓN DEL DOCUMENTO*.\r\n\r\n## Autor\r\nPablo Pizarro, 2016.\r\n\r\nSi tienes alguna sugerencia envíame un correo a: [pablo.pizarro@ing.uchile.cl](mailto:pablo.pizarro@ing.uchile.cl), o sencillamente ten la libertad de enviar un _pull request_.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
