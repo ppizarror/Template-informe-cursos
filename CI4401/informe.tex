@@ -72,16 +72,16 @@
 \newcommand{\defaultimagefolder}{images/}         % Directorio de las imágenes 
 \newcommand{\tipofuentetitulo}{\huge}             % Tamaño de los títulos
 \newcommand{\tipofuentesubtitulo}{\Large}         % Tamaño de los subtítulos
-\newcommand{\tipofuentesubsubtitulo}{\large}      % Tamaño de los subsubtítulos
+\newcommand{\tipofuentesubsubtitulo}{\large}      % Tamaño de los sub-subtítulos
 \newcommand{\tipofuentetituloi}{\huge}            % Tamaño de los títulos en el índice
 \newcommand{\tipofuentesubtituloi}{\large}        % Tamaño de los subtítulos en el índice
-\newcommand{\tipofuentesubsubtituloi}{\large}     % Tamaño de los subsubtítulos en el índice
+\newcommand{\tipofuentesubsubtituloi}{\large}     % Tamaño de los sub-subtítulos en el índice
 \newcommand{\etipofuentetitulo}{\bfseries}        % Estilo de los títulos
 \newcommand{\etipofuentesubtitulo}{\bfseries}     % Estilo de los subtítulos
-\newcommand{\etipofuentesubsubtitulo}{\bfseries}  % Estilo de los subsubtítulos
+\newcommand{\etipofuentesubsubtitulo}{\bfseries}  % Estilo de los sub-subtítulos
 \newcommand{\etipofuentetituloi}{\bfseries}       % Estilo de los títulos en el índice
 \newcommand{\etipofuentesubtituloi}{\bfseries}    % Estilo de los subtítulos en el índice
-\newcommand{\etipofuentesubsubtituloi}{\bfseries} % Estilo de los subsubtítulos en el índice
+\newcommand{\etipofuentesubsubtituloi}{\bfseries} % Estilo de los sub-subtítulos en el índice
 \newcommand{\tiporeferencias}{apa}                % Tipo de referencias
 \newcommand{\nomblttablas}{Lista de Tablas}       % Nombre de la lista de tablas
 \newcommand{\nombltfiguras}{Lista de Figuras}     % Nombre de la lista de figuras
@@ -104,29 +104,30 @@
 \usepackage{amsmath}                  % Fórmulas matemáticas
 \usepackage{amssymb}                  % Símbolos matemáticos
 \usepackage{amsthm}                   % Teoremas matemáticos
-\usepackage[bottom, norule]{footmisc} % Estilo pié de página
+\usepackage{booktabs}                 % Permite manejar elementos visuales en tablas
+\usepackage[makeroom]{cancel}         % Cancelar términos en fórmulas
 \usepackage{caption}                  % Leyendas
 \usepackage{color}                    % Colores
 \usepackage{datetime}                 % Fechas
-\usepackage{enumitem}                 % Enumeraciones
+\usepackage{enumerate}                % Permite enumerar ítemes
+\usepackage[bottom, norule]{footmisc} % Estilo pié de página
 \usepackage{fancyhdr}                 % Encabezados y pié de páginas
 \usepackage{float}                    % Administrador de posiciones de objetos
-\usepackage{gensymb}                  % Simbología común
+\usepackage{textcomp, gensymb}        % Simbología común                
 \usepackage{geometry}                 % Dimensiones y geometría del documento
 \usepackage{graphicx}                 % Propiedades extra para los gráficos
-\usepackage[makeroom]{cancel}         % Cancelar términos en fórmulas
+\usepackage[version=4]{mhchem}        % Fórmulas químicas
 \usepackage{multicol}                 % Múltiples columnas
 \usepackage{lipsum}                   % Permite crear textos dummy
 \usepackage{longtable}                % Permite utilizar tablas en varias hojas
 \usepackage{listings}                 % Permite añadir código fuente
 \usepackage{sectsty}                  % Cambia el estilo de los títulos
 \usepackage{setspace}                 % Cambia el espacio entre líneas
-\usepackage{subfig}                   % Permite agrupar imágenes
+\usepackage{subcaption}               % Permite agrupar imágenes
 \usepackage{tikz}                     % Permite dibujar 
-\usepackage{url}                      % Permite añadir enlaces
-\usepackage[version=4]{mhchem}        % Fórmulas químicas
 \usepackage{ulem}                     % Permite tachar, subrayar, etc
-\usepackage{wasysym}                  % Contiene carácteres misceláneos
+\usepackage{url}                      % Permite añadir enlaces
+\usepackage{wasysym}                  % Contiene caracteres misceláneos
 \usepackage{wrapfig}                  % Permite comprimir imágenes
 
 % LIBRERÍAS DEPENDIENTES
@@ -167,9 +168,9 @@
 	\addcontentsline{toc}{section}{#1} \section*{#1}}
 \newcommand{\newsubtitleanum}[1]{     % Insertar un subtítulo sin número
 	\addcontentsline{toc}{subsection}{#1} \subsection*{#1}}
-\newcommand{\newtitleanumnoi}[1]{     % Insertar un título sin num. fuera del índice
+\newcommand{\newtitleanumnoi}[1]{     % Insertar un título sin número sin indexar
 	\section*{#1}}
-\newcommand{\newsubtitleanumnoi}[1]{  % Insertar un subtítulo sin num. fuera del índice
+\newcommand{\newsubtitleanumnoi}[1]{  % Insertar un subtítulo sin número sin indexar
 	\subsection*{#1}}
 \newcommand{\insertequation}[2][]{    % Insertar una ecuación
 	\vspace{-0.18cm}
@@ -186,7 +187,7 @@
 		\vspace{-0.15cm}
 		\textit{#3} \par
 	\end{center}}
-\newcommand{\insertimage}[4][]{       % Insertar una imagen
+\newcommand{\insertimage}[4][]{ % Insertar una imagen
 	\vspace{\defaultmargintopimages}
 	\begin{figure}[H]
 		\centering
@@ -194,7 +195,7 @@
 		\caption{#4 #1}
 	\end{figure}
 	\vspace{\defaultmarginbottomimages}}
-\newcommand{\insertimageboxed}[4][]{  % Insertar una imagen con recuadro
+\newcommand{\insertimageboxed}[4][]{ % Insertar una imagen con recuadro
 	\vspace{\defaultmargintopimages}
 	\begin{figure}[H]
 		\centering
@@ -202,7 +203,7 @@
 		\caption{#4 #1}
 	\end{figure}
 	\vspace{\defaultmarginbottomimages}}
-\newcommand{\insertimagefixed}[5][]{  % Insertar una imagen de ancho fijo a la página
+\newcommand{\insertimagefixed}[5][]{ % Insertar una imagen de ancho fijo a la página
 	\vspace{\defaultmargintopimages}
 	\begin{figure}[H]
 		\centering
@@ -235,7 +236,7 @@
 	\end{figure}
 	\vspace{\defaultmarginbottomimages}
 	\setcaptionmargincm{\defaultcaptionmargin}}
-\newcommand{\insertimageleft}[5][]{   % Insertar una imagen a la izquierda
+\newcommand{\insertimageleft}[5][]{ % Insertar una imagen a la izquierda
 	\begin{wrapfigure}[#5]{l}{#3\textwidth}
 		\setcaptionmargincm{0}
 		\vspace{\defaultmarginfloatimages}
@@ -243,7 +244,7 @@
 		\caption{#4 #1}
 		\setcaptionmargincm{\defaultcaptionmargin}
 	\end{wrapfigure}}
-\newcommand{\insertimageright}[5][]{  % Insertar una imagen a la derecha
+\newcommand{\insertimageright}[5][]{ % Insertar una imagen a la derecha
 	\begin{wrapfigure}[#5]{r}{#3\textwidth}
 		\setcaptionmargincm{0}
 		\vspace{\defaultmarginfloatimages}
@@ -305,13 +306,13 @@
 	emph=[1]{for,end,break},emphstyle=[1]\color{red}}
 
 % CONFIGURACIÓN INICIAL DEL DOCUMENTO
-\counterwithin{equation}{section}          % Añade número de sección a las ecuaciones
-\counterwithin{figure}{section}            % Añade número de sección a las figuras
-\counterwithin{table}{section}             % Añade número de sección a las tablas
-\bibliographystyle{\tiporeferencias}       % Estilo APA para las referencias
-\setcaptionmargincm{\defaultcaptionmargin} % Margen por defecto
-\setlength{\headheight}{54pt}              % Tamaño de la cabecera sin fancyhdr
-\setcounter{tocdepth}{\indexdepth}         % Se ajusta la profundidad del índice
+\counterwithin{equation}{section}           % Añade número de sección a las ecuaciones
+\counterwithin{figure}{section}             % Añade número de sección a las figuras
+\counterwithin{table}{section}              % Añade número de sección a las tablas
+\bibliographystyle{\tiporeferencias}        % Estilo APA para las referencias
+\setcaptionmargincm{\defaultcaptionmargin}  % Margen por defecto
+\setlength{\headheight}{54pt}               % Tamaño de la cabecera sin fancyhdr
+\setcounter{tocdepth}{\indexdepth}          % Se ajusta la profundidad del índice
 \hypersetup{
 	%pdfauthor={Author},
 	pdftitle={\nombredelinforme},
@@ -320,8 +321,8 @@
 	\codigodelcurso, \localizacionuniversidad},
 	pdfproducer={LaTeX},
 	pdfcreator={pdfLaTeX}}
-\renewcommand{\baselinestretch}{\defaultinterlind}  % Ajuste del entrelineado
-\makeatletter \renewenvironment{thebibliography}[1] % Bibliografía en 2 columnas
+\renewcommand{\baselinestretch}{\defaultinterlind}   % Ajuste del entrelineado
+\makeatletter \renewenvironment{thebibliography}[1]  % Bibliografía en 2 columnas
 {\begin{multicols}{2}[\section*{\refname}]
 	\@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}
 	\list{\@biblabel{\@arabic\c@enumiv}}

@@ -9,4 +9,4 @@ Para utilizar las funciones extras del template puedes revisar esta <a href="htt
 ## Autor
 Pablo Pizarro, 2016.
 
-Si tienes alguna sugerencia envíame un correo a: [pablo.pizarro@ing.uchile.cl](mailto:pablo.pizarro@ing.uchile.cl), o sencillamente ten la libertad de enviar un _pull request_.
+Si tienes alguna sugerencia envíame un correo a: [pablo@ppizarror.com](mailto:pablo@ppizarror.com), o sencillamente ten la libertad de enviar un _pull request_.
